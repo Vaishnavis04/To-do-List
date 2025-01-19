@@ -1,0 +1,190 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #A24DE7, #60B3F2); /* Purple to Blue Gradient */
+  color: #fff; /* White text for contrast */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main Container */
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #FFFFFF; /* White Background for the Todo List */
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft Shadow for Depth */
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6C63FF; /* Deep Purple-Blue for Heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Add Todo Section */
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #6C63FF; /* Purple Border */
+  background-color: #F5F5FF; /* Soft Off-White Background for Inputs */
+  color: #333; /* Dark Text for Inputs */
+}
+
+/* Input Focus */
+input:focus, textarea:focus {
+  border-color: #60B3F2; /* Light Blue on Focus */
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(135deg, #A24DE7, #60B3F2); /* Gradient Buttons */
+  color: white; /* White Text for Buttons */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.2); /* Brighten Button on Hover */
+  transform: scale(1.05); /* Slight Scale on Hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slight Shrink on Active */
+}
+
+/* Todo List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background-color: #E9E8FF; /* Light Lavender Background for Todo Items */
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #A24DE7; /* Purple Border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+  color: #000; /* Black Text for Added Todos */
+  font-weight: 500; /* Slightly Bold for Better Readability */
+}
+
+.todo-item.completed {
+  background-color: #D4F7D4; /* Light Green for Completed Items */
+  text-decoration: line-through;
+  color: #808080; /* Muted Gray for Completed Todos */
+}
+
+/* Button Row Styling */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Complete Button - Gradient Green */
+.complete-btn {
+  background: linear-gradient(135deg, #4CAF50, #81C784); /* Green Gradient */
+  color: white;
+}
+
+.complete-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* Edit Button - Gradient Purple */
+.edit-btn {
+  background: linear-gradient(135deg, #A24DE7, #8B74E6); /* Purple Gradient */
+  color: white;
+}
+
+.edit-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* Delete Button - Gradient Red */
+.delete-btn {
+  background: linear-gradient(135deg, #E57373, #F44336); /* Red Gradient */
+  color: white;
+}
+
+.delete-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* Edit Todo Form */
+.edit-form {
+  margin-top: 20px;
+  background-color: #FFF3D4; /* Soft Yellow Background for Edit Form */
+  padding: 20px;
+  border: 1px solid #FFC107; /* Yellow Border */
+  border-radius: 8px;
+}
+
+.edit-form button {
+  background: linear-gradient(135deg, #60B3F2, #A24DE7); /* Gradient Button */
+  color: white;
+}
+
+.edit-form button:hover {
+  filter: brightness(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-item .buttons {
+    margin-top: 10px;
+  }
+
+  .todo-item .buttons button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+
+
+
+
