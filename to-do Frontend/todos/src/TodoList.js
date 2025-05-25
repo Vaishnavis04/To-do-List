@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css'; // Import the CSS
 
-const apiUrl = 'http://localhost:5000/todos';
+const apiUrl = 'https://task-trail-h9uc.onrender.com/todos';
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
